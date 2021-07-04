@@ -42,7 +42,6 @@ class _DicePageState extends State<DicePage> {
                 setState( () {
                   leftDice = random.nextInt(6) + 1;
                 });
-                print(leftDice);
               },
             ),
           ),
