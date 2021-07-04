@@ -22,6 +22,7 @@ class DicePage extends StatelessWidget {
   Widget build(BuildContext context) {
 
     var leftDice = 1;
+    var rightDice = 1;
     var random = Random();
 
     return Center(
@@ -39,7 +40,7 @@ class DicePage extends StatelessWidget {
           ),
           Expanded(
             child: TextButton(
-              child: Image.asset('images/dice2.png'),
+              child: Image.asset('images/dice$rightDice.png'),
               onPressed: () {
                 print('Right button got pressed');
               },
