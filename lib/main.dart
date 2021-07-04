@@ -24,13 +24,13 @@ class DicePage extends StatefulWidget {
 }
 
 class _DicePageState extends State<DicePage> {
+
+  var leftDice = 1;
+  var rightDice = 1;
+  var random = Random();
+
   @override
   Widget build(BuildContext context) {
-
-    var leftDice = 1;
-    var rightDice = 1;
-    var random = Random();
-
     return Center(
       child: Row(
         children: [
