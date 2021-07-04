@@ -22,6 +22,8 @@ class DicePage extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Row(
+          // mainAxisAlignment has no effect on padding within row due to expand
+          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Expanded(
               // flex: 2,
