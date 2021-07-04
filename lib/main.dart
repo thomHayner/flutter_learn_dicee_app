@@ -32,7 +32,9 @@ class DicePage extends StatelessWidget {
           Expanded(
             child: TextButton(
               child: Image.asset('images/dice2.png'),
-              onPressed: () => {},
+              onPressed: () {
+                print('Right button got pressed');
+              },
             ),
           ),
         ],
