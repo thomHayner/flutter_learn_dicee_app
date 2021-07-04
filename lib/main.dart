@@ -27,13 +27,13 @@ class _DicePageState extends State<DicePage> {
 
   var leftDice = 1;
   var rightDice = 1;
+  void roll() {
+    leftDice = Random().nextInt(6) + 1;
+    rightDice = Random().nextInt(6) + 1;
+  }
 
   @override
   Widget build(BuildContext context) {
-    void roll() {
-      leftDice = Random().nextInt(6) + 1;
-      rightDice = Random().nextInt(6) + 1;
-    }
 
     return Center(
       child: Row(
