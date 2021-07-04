@@ -26,16 +26,6 @@ class DicePage extends StatefulWidget {
 class _DicePageState extends State<DicePage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
-    );
-  }
-}
-
-class DicePage extends StatelessWidget {
-
-  @override
-  Widget build(BuildContext context) {
 
     var leftDice = 1;
     var rightDice = 1;
@@ -66,4 +56,7 @@ class DicePage extends StatelessWidget {
       ),
     );
   }
+}
+
+class DicePage extends StatelessWidget {
 }
