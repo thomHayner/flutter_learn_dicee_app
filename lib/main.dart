@@ -37,11 +37,13 @@ class _DicePageState extends State<DicePage> {
             child: TextButton(
               child: Image.asset('images/dice$leftDice.png'),
               onPressed: () {
+                print('Left: $leftDice / right: $rightDice');
                 print('Left button got pressed');
                 setState( () {
                   leftDice = Random().nextInt(6) + 1;
                   rightDice = Random().nextInt(6) + 1;
                 });
+                print('Left: $leftDice /n right: $rightDice');
               },
             ),
           ),
