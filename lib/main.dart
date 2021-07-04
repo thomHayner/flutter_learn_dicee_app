@@ -53,6 +53,7 @@ class _DicePageState extends State<DicePage> {
               onPressed: () {
                 setState(() {
                   rightDice = Random().nextInt(6) + 1;
+                  leftDice = Random().nextInt(6) + 1;
                 });
                 print('Right button got pressed');
               },
